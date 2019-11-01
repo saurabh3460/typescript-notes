@@ -10,4 +10,4 @@ const Home: Next<{ name: string }> = ({ name }) => {
   console.log(name);
 };
 
-Home({ name: "hello" });
+Home({ name: "hey" });
