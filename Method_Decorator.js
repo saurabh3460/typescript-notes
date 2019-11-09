@@ -5,7 +5,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-function env_config(target, propertyName, pd) {
+function Get(target, propertyName, pd) {
     // target === Employee.prototype
     // propertyName === "greet"
     // propertyDesciptor === Object.getOwnPropertyDescriptor(Employee.prototype, "greet")
@@ -18,6 +18,7 @@ function env_config(target, propertyName, pd) {
     };
     return pd;
 }
+function Param() { }
 class Employee {
     greet(name) {
         this.name = name;
@@ -29,7 +30,7 @@ class Employee {
     }
 }
 __decorate([
-    env_config
+    Get
 ], Employee.prototype, "get", null);
 console.log(Employee.prototype);
 const emp1 = new Employee();
